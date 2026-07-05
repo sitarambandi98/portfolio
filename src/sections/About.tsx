@@ -1,27 +1,27 @@
 import { motion } from 'framer-motion';
-import { Code2, Database, Cloud, Users } from 'lucide-react';
+import { Video, Sparkles, Palette, Users } from 'lucide-react';
 import { profile } from '../data/portfolio';
 
 const highlights = [
   {
-    icon: Code2,
-    title: "Full Stack Development",
-    description: "Building complete web applications from frontend to backend with modern frameworks and best practices.",
+    icon: Video,
+    title: "Video Production",
+    description: "Creating professional videos from concept to final edit, with attention to storytelling and visual impact.",
   },
   {
-    icon: Database,
-    title: "Database Design",
-    description: "Designing efficient database schemas and queries for optimal performance and data integrity.",
+    icon: Sparkles,
+    title: "Motion Design",
+    description: "Bringing static designs to life with captivating animations and motion graphics that engage audiences.",
   },
   {
-    icon: Cloud,
-    title: "Cloud Deployment",
-    description: "Deploying and managing applications on Azure cloud with automated CI/CD pipelines.",
+    icon: Palette,
+    title: "Brand Design",
+    description: "Crafting cohesive visual identities that communicate brand values and resonate with target audiences.",
   },
   {
     icon: Users,
-    title: "Team Collaboration",
-    description: "Working effectively in agile teams with code reviews, documentation, and knowledge sharing.",
+    title: "Content Strategy",
+    description: "Developing content strategies that align with brand goals and maximize engagement across platforms.",
   },
 ];
 
@@ -43,10 +43,10 @@ export default function About() {
                 {profile.introduction}
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I have hands-on experience with enterprise application development, including timesheet management systems, authentication platforms, and role-based access control systems. I'm passionate about writing clean, maintainable code and building solutions that make a real impact.
+                I specialize in creating high-quality video content and visual designs that captivate audiences. From eye-catching motion graphics to cohesive brand identities, I bring creativity and technical expertise to every project.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                When I'm not coding, I enjoy staying up-to-date with the latest technologies and contributing to open-source projects. I'm always looking for new challenges and opportunities to grow as a developer.
+                Whether it's crafting compelling YouTube content, designing social media campaigns, or building brand identities, I focus on delivering work that drives results and exceeds expectations.
               </p>
             </div>
 

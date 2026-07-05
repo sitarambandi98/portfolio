@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import { skills } from '../data/portfolio';
-import { Code, Server, Database, Cloud, Wrench } from 'lucide-react';
+import { Video, Sparkles, Palette, Share2, Briefcase, Wrench } from 'lucide-react';
 
 const skillCategories = [
-  { name: 'Frontend', icon: Code, data: skills.frontend },
-  { name: 'Backend', icon: Server, data: skills.backend },
-  { name: 'Databases', icon: Database, data: skills.databases },
-  { name: 'Cloud', icon: Cloud, data: skills.cloud },
+  { name: 'Video Editing', icon: Video, data: skills.videoEditing },
+  { name: 'Motion Graphics', icon: Sparkles, data: skills.motionGraphics },
+  { name: 'Graphic Design', icon: Palette, data: skills.graphicDesign },
+  { name: 'Social Media', icon: Share2, data: skills.socialMedia },
+  { name: 'Brand Identity', icon: Briefcase, data: skills.brandIdentity },
   { name: 'Tools', icon: Wrench, data: skills.tools },
 ];
 
@@ -40,9 +41,9 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="section-title">Technical Skills</h2>
+          <h2 className="section-title">Creative Skills</h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise across different domains of software development.
+            A comprehensive overview of my creative expertise across video production, motion graphics, design, and content creation.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
