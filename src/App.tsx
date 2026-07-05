@@ -6,9 +6,8 @@ import SEO from './components/SEO';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
-import Projects from './sections/Projects';
-import Experience from './sections/Experience';
 import Contact from './sections/Contact';
+import WorkShowcase from './sections/WorkShowcase';
 
 function App() {
   return (
@@ -21,8 +20,7 @@ function App() {
             <Hero />
             <About />
             <Skills />
-            <Projects />
-            <Experience />
+            <WorkShowcase />
             <Contact />
           </main>
           <Footer />

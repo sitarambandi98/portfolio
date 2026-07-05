@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, Download, Sparkles } from 'lucide-react';
+import { AiFillYoutube } from 'react-icons/ai';
 import { profile } from '../data/portfolio';
 
 export default function Hero() {
@@ -39,10 +40,12 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
-              href="#projects"
-              className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-2"
+              href={profile.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-2"
             >
-              <Play className="w-5 h-5" />
+              <AiFillYoutube className="w-5 h-5" />
               View My Work
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
