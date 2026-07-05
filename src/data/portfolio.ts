@@ -5,7 +5,6 @@ export const profile = {
   introduction: "I'm a passionate video editor and content creator specializing in crafting compelling visual stories. With expertise in video editing, motion graphics, and social media content, I help brands and individuals connect with their audience through creative video content.",
   email: "abhirambandi9491@gmail.com",
   linkedin: "https://www.linkedin.com/in/bandi-abhiram-956b5a347",
-  github: "https://github.com/bandiabhiram",
   youtube: "https://youtube.com/@barvlogzz-85?si=5Lwx0b979KHSeX5J",
   resumeUrl: "/resume.pdf",
 };
@@ -43,6 +42,7 @@ export const projects = [
     tech: ["Premiere Pro", "After Effects", "CapCut", "Photoshop"],
     category: "YouTube Content",
     highlights: ["Regular Content Creator", "Engaging Visuals", "Growth Focused"],
+    link: "https://youtube.com/@barvlogzz-85",
   },
   {
     id: 2,
@@ -51,6 +51,7 @@ export const projects = [
     tech: ["CapCut", "Premiere Pro", "After Effects"],
     category: "Social Media",
     highlights: ["Multi-Platform", "Platform Optimized", "High Engagement"],
+    link: "https://www.linkedin.com/in/bandi-abhiram-956b5a347",
   },
   {
     id: 3,
@@ -59,6 +60,7 @@ export const projects = [
     tech: ["Photoshop", "3DS Max", "Illustrator"],
     category: "Brand Identity",
     highlights: ["Unique Designs", "3D Visualization", "Brand Consistent"],
+    link: "mailto:abhirambandi9491@gmail.com",
   },
 ];
 

@@ -6,7 +6,7 @@ export default function SEO() {
     <Helmet>
       <title>{profile.name} - {profile.title}</title>
       <meta name="description" content={profile.introduction} />
-      <meta name="keywords" content="Full Stack Developer, React, Next.js, .NET, Java, Spring Boot, PostgreSQL, Azure, TypeScript" />
+      <meta name="keywords" content="Video Editor, Content Creator, Premiere Pro, After Effects, CapCut, Social Media, Instagram Reels, YouTube Shorts, Motion Graphics" />
       <meta name="author" content={profile.name} />
       
       <meta property="og:title" content={`${profile.name} - ${profile.title}`} />
@@ -18,7 +18,7 @@ export default function SEO() {
       <meta name="twitter:description" content={profile.introduction} />
       
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://yourportfolio.com" />
+      <link rel="canonical" href="https://sitarambandi98.github.io/portfolio/" />
     </Helmet>
   );
 }
