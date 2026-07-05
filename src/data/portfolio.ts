@@ -6,7 +6,7 @@ export const profile = {
   email: "abhirambandi9491@gmail.com",
   linkedin: "https://www.linkedin.com/in/bandi-abhiram-956b5a347",
   youtube: "https://youtube.com/@barvlogzz-85?si=5Lwx0b979KHSeX5J",
-  resumeUrl: "/resume.jpg",
+  resumeUrl: "/resume.jpeg",
 };
 
 export const skills = {
