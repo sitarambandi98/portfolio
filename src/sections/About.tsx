@@ -1,31 +1,31 @@
 import { motion } from 'framer-motion';
-import { Video, Sparkles, Palette, TrendingUp } from 'lucide-react';
+import { Video, Sparkles, Palette, Share2 } from 'lucide-react';
 import { profile } from '../data/portfolio';
 
 const highlights = [
   {
     icon: Video,
-    title: "Video Production",
-    description: "Creating professional videos from concept to final edit, with attention to storytelling and visual impact that captivates audiences.",
-    color: "from-red-500 to-red-600",
-  },
-  {
-    icon: Sparkles,
-    title: "Motion Design",
-    description: "Bringing static designs to life with captivating animations and motion graphics that engage and delight viewers.",
-    color: "from-purple-500 to-pink-500",
+    title: "Video Editing",
+    description: "Professional video editing using Premiere Pro, After Effects, and CapCut to create engaging content.",
+    color: "from-red-500 to-pink-500",
   },
   {
     icon: Palette,
-    title: "Brand Design",
-    description: "Crafting cohesive visual identities that communicate brand values and resonate with target audiences.",
-    color: "from-blue-500 to-cyan-500",
+    title: "Design & 3D",
+    description: "Creating stunning visuals with Photoshop and 3DS Max for brand identity and logo design.",
+    color: "from-purple-500 to-indigo-500",
   },
   {
-    icon: TrendingUp,
-    title: "Content Strategy",
-    description: "Developing content strategies that align with brand goals and maximize engagement across all platforms.",
-    color: "from-green-500 to-emerald-500",
+    icon: Sparkles,
+    title: "Specializations",
+    description: "Expert in transitions, effects, and motion graphics that captivate audiences.",
+    color: "from-cyan-500 to-blue-500",
+  },
+  {
+    icon: Share2,
+    title: "Social Media",
+    description: "Creating optimized content for Instagram Reels, YouTube Shorts, LinkedIn, Twitter/X, and Facebook.",
+    color: "from-pink-500 to-rose-500",
   },
 ];
 
@@ -47,23 +47,20 @@ export default function About() {
                 {profile.introduction}
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I specialize in creating high-quality video content and visual designs that captivate audiences. From eye-catching motion graphics to cohesive brand identities, I bring creativity and technical expertise to every project.
+                I specialize in creating high-quality video content and visual designs for social media platforms. From engaging YouTube videos to eye-catching Instagram Reels, I bring creativity and technical expertise to every project.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                Whether it's crafting compelling YouTube content, designing social media campaigns, or building brand identities, I focus on delivering work that drives results and exceeds expectations.
+                My focus is on delivering content that resonates with audiences and drives engagement. Whether it's transitions, effects, or complete brand visuals, I ensure every piece meets the highest quality standards.
               </p>
               
               <div className="flex flex-wrap gap-3 pt-4">
-                <span className="px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/50 dark:to-pink-900/50 text-purple-700 dark:text-purple-300 rounded-full font-medium text-sm">
+                <span className="px-4 py-2 bg-gradient-to-r from-red-100 to-pink-100 dark:from-red-900/50 dark:to-pink-900/50 text-red-700 dark:text-red-300 rounded-full font-medium text-sm">
                   Video Editing
                 </span>
-                <span className="px-4 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/50 dark:to-cyan-900/50 text-blue-700 dark:text-blue-300 rounded-full font-medium text-sm">
-                  Motion Graphics
+                <span className="px-4 py-2 bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-purple-900/50 dark:to-indigo-900/50 text-purple-700 dark:text-purple-300 rounded-full font-medium text-sm">
+                  Design & 3D
                 </span>
-                <span className="px-4 py-2 bg-gradient-to-r from-green-100 to-emerald-100 dark:from-green-900/50 dark:to-emerald-900/50 text-green-700 dark:text-green-300 rounded-full font-medium text-sm">
-                  Brand Design
-                </span>
-                <span className="px-4 py-2 bg-gradient-to-r from-orange-100 to-red-100 dark:from-orange-900/50 dark:to-red-900/50 text-orange-700 dark:text-orange-300 rounded-full font-medium text-sm">
+                <span className="px-4 py-2 bg-gradient-to-r from-pink-100 to-rose-100 dark:from-pink-900/50 dark:to-rose-900/50 text-pink-700 dark:text-pink-300 rounded-full font-medium text-sm">
                   Social Media
                 </span>
               </div>

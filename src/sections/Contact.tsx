@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, Send, MapPin } from 'lucide-react';
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin } from 'react-icons/ai';
 import { profile } from '../data/portfolio';
 import { useState } from 'react';
 
@@ -32,9 +32,9 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="section-title">Let's Work Together</h2>
+          <h2 className="section-title">Contact Me</h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+            Interested in working together? Feel free to reach out!
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -66,22 +66,24 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
-                    <p className="font-medium text-gray-900 dark:text-white">Connect with me</p>
+                    <p className="font-medium text-gray-900 dark:text-white">Bandi Abhiram</p>
                   </div>
                 </a>
 
                 <a
-                  href={profile.github}
+                  href={profile.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-600 dark:to-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <AiFillGithub className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">GitHub</p>
-                    <p className="font-medium text-gray-900 dark:text-white">View my work</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">YouTube</p>
+                    <p className="font-medium text-gray-900 dark:text-white">@Barvlog2285</p>
                   </div>
                 </a>
 

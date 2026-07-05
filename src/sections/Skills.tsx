@@ -1,14 +1,12 @@
 import { motion } from 'framer-motion';
 import { skills } from '../data/portfolio';
-import { Video, Sparkles, Palette, Share2, Briefcase, Wrench } from 'lucide-react';
+import { Video, Palette, Sparkles, Share2 } from 'lucide-react';
 
 const skillCategories = [
   { name: 'Video Editing', icon: Video, data: skills.videoEditing, color: 'from-red-500 to-pink-500' },
-  { name: 'Motion Graphics', icon: Sparkles, data: skills.motionGraphics, color: 'from-purple-500 to-indigo-500' },
-  { name: 'Graphic Design', icon: Palette, data: skills.graphicDesign, color: 'from-cyan-500 to-blue-500' },
+  { name: 'Design & 3D', icon: Palette, data: skills.design3D, color: 'from-purple-500 to-indigo-500' },
+  { name: 'Specializations', icon: Sparkles, data: skills.specializations, color: 'from-cyan-500 to-blue-500' },
   { name: 'Social Media', icon: Share2, data: skills.socialMedia, color: 'from-pink-500 to-rose-500' },
-  { name: 'Brand Identity', icon: Briefcase, data: skills.brandIdentity, color: 'from-amber-500 to-orange-500' },
-  { name: 'Tools', icon: Wrench, data: skills.tools, color: 'from-emerald-500 to-green-500' },
 ];
 
 function SkillBar({ name, level, color }: { name: string; level: number; color: string }) {
@@ -41,12 +39,12 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="section-title">Creative Skills</h2>
+          <h2 className="section-title">Skills</h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            A comprehensive overview of my creative expertise across video production, motion graphics, design, and content creation.
+            My expertise in video editing, design, and social media content creation.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.name}
