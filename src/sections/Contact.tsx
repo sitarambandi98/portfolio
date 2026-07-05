@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800/50">
+    <section id="contact" className="py-20 bg-gradient-to-b from-purple-50 to-pink-50 dark:from-gray-900 dark:to-gray-900">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,22 +32,22 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title">Let's Work Together</h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, projects, or just a friendly conversation. Feel free to reach out!
+            Have a project in mind? I'd love to hear about it. Let's create something amazing together.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">Contact Information</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <a
                   href={`mailto:${profile.email}`}
-                  className="flex items-center gap-4 p-4 card hover:border-primary-500 dark:hover:border-primary-400 transition-colors"
+                  className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group"
                 >
-                  <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
@@ -59,10 +59,10 @@ export default function Contact() {
                   href={profile.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 card hover:border-primary-500 dark:hover:border-primary-400 transition-colors"
+                  className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group"
                 >
-                  <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center">
-                    <AiFillLinkedin className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <AiFillLinkedin className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
@@ -74,36 +74,36 @@ export default function Contact() {
                   href={profile.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 card hover:border-primary-500 dark:hover:border-primary-400 transition-colors"
+                  className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group"
                 >
-                  <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center">
-                    <AiFillGithub className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                  <div className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-600 dark:to-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <AiFillGithub className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">GitHub</p>
-                    <p className="font-medium text-gray-900 dark:text-white">View my repositories</p>
+                    <p className="font-medium text-gray-900 dark:text-white">View my work</p>
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4 card">
-                  <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                <div className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
-                    <p className="font-medium text-gray-900 dark:text-white">Open to remote work</p>
+                    <p className="font-medium text-gray-900 dark:text-white">Open to remote work worldwide</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">Send a Message</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Send a Message</h3>
               
-              <form onSubmit={handleSubmit} className="card p-6 space-y-4">
+              <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Name
+                    Your Name
                   </label>
                   <input
                     type="text"
@@ -112,14 +112,14 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                    placeholder="Your name"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                    placeholder="What should I call you?"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Email
+                    Email Address
                   </label>
                   <input
                     type="email"
@@ -128,14 +128,14 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Message
+                    Your Message
                   </label>
                   <textarea
                     id="message"
@@ -144,14 +144,14 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none"
-                    placeholder="Your message..."
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none"
+                    placeholder="Tell me about your project..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full btn-primary flex items-center justify-center gap-2"
+                  className="w-full py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Send size={18} />
                   Send Message

@@ -1,4 +1,4 @@
-import { Mail, ArrowUp } from 'lucide-react';
+import { Mail, ArrowUp, Sparkles } from 'lucide-react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { profile } from '../data/portfolio';
 
@@ -8,18 +8,21 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
+    <footer className="bg-gradient-to-r from-purple-900 via-pink-900 to-purple-900 text-white py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold text-white mb-2">{profile.name}</h3>
-            <p className="text-gray-400">{profile.title}</p>
+            <div className="flex items-center gap-2 mb-2">
+              <Sparkles className="w-5 h-5 text-pink-400" />
+              <h3 className="text-xl font-bold text-white">{profile.name}</h3>
+            </div>
+            <p className="text-gray-300">{profile.title}</p>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
-              href={profile.email}
-              className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors"
+              href={`mailto:${profile.email}`}
+              className="w-10 h-10 bg-white/10 hover:bg-pink-500 rounded-lg flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
               aria-label="Email"
             >
               <Mail size={18} />
@@ -28,7 +31,7 @@ export default function Footer() {
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors"
+              className="w-10 h-10 bg-white/10 hover:bg-blue-500 rounded-lg flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
               aria-label="LinkedIn"
             >
               <AiFillLinkedin size={18} />
@@ -37,14 +40,14 @@ export default function Footer() {
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors"
+              className="w-10 h-10 bg-white/10 hover:bg-gray-700 rounded-lg flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
               aria-label="GitHub"
             >
               <AiFillGithub size={18} />
             </a>
             <button
               onClick={scrollToTop}
-              className="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors ml-2"
+              className="w-10 h-10 bg-white/10 hover:bg-purple-500 rounded-lg flex items-center justify-center transition-all duration-300 backdrop-blur-sm ml-2"
               aria-label="Scroll to top"
             >
               <ArrowUp size={18} />
@@ -52,9 +55,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center">
+        <div className="mt-8 pt-8 border-t border-white/10 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.
+            &copy; {new Date().getFullYear()} {profile.name}. Crafted with passion & creativity.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Menu, X } from 'lucide-react';
+import { Moon, Sun, Menu, X, Sparkles } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const navLinks = [
@@ -29,8 +29,11 @@ export default function Navbar() {
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold text-primary-600 dark:text-primary-400">
-            Portfolio
+          <a href="#" className="flex items-center gap-2 text-xl font-bold">
+            <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
+              Portfolio
+            </span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
@@ -38,7 +41,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
+                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors font-medium"
               >
                 {link.name}
               </a>
@@ -79,7 +82,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium py-2"
+                className="block text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors font-medium py-2"
               >
                 {link.name}
               </a>
